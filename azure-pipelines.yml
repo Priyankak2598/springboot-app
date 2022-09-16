@@ -45,8 +45,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    sonarQubeRunAnalysis: true
-    sqMavenPluginVersionChoice: 'pom'
+    sonarQubeRunAnalysis: false
 - task: SonarQubePublish@5
   inputs:
     pollingTimeoutSec: '300'
